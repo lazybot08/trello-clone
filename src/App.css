@@ -1,0 +1,37 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f3f4;
+  color: #172b4d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+button {
+  background-color: #5aac44;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: auto;  
+}
+
+button:hover {
+  background-color: #4fa63d;
+}
+
+.status-columns {
+  display: flex;
+  gap: 16px;
+  padding: 20px 0;
+  justify-content: center;
+}

@@ -1,0 +1,48 @@
+.status-column {
+    background-color: #ebecf0;
+    border: none;
+    border-radius: 3px;
+    min-width: 272px;
+    height: 100%;
+    margin: 4px;
+    padding: 8px 8px 0;
+  }
+
+  .status-header {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+
+  .status-header span {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .status-column span h2 {
+    margin-right: 0px;
+  }
+
+  .material-symbols-outlined {
+    margin-left: auto;
+  }
+  
+  .material-symbols-outlined:hover {
+    cursor: pointer;
+  }
+  
+  .status-column h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .task-list {
+    background-color: #ebecf0;
+    border: none;
+    border-radius: 3px;
+    padding: 8px;
+    min-height: 40px;
+  }
+  

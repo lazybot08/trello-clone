@@ -1,0 +1,57 @@
+.task-detail {
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 16px;
+    margin: 8px;
+    min-width: 300px;
+    cursor: default;
+    overflow: hidden;
+  }
+  
+  .task-detail h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    padding: 8px;
+  }
+  
+  .task-detail label {
+    font-weight: bold;
+    display: block;
+    padding: 8px;
+  }
+  
+  .task-detail input,
+  .task-detail textarea {
+    width: 94%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 8px;
+  }
+
+  .task-status select{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 8px;
+  }
+  
+  .task-detail button {
+    background-color: #f84d4d;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 8px;
+  }
+  
+  .task-detail button:hover {
+    background-color: #f63c3c;
+  }
+  
