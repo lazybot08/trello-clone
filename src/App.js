@@ -45,6 +45,7 @@ const App = () => {
   const deleteTask = (taskId) => {
     const updatedTasks = tasks.filter((task) => task.id !== taskId);
     saveTask(updatedTasks);
+    setSelectedTask(null);
   };
 
   const onTaskMove = (taskId, newStatus) => {
