@@ -68,7 +68,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Trello Clone</h1>
+      <h1>To-Do List</h1>
       {!selectedTask && <button onClick={addStatus}>Add New Status</button>}
       {!selectedTask && <div className="status-columns">
         {statuses.map((status) => (
