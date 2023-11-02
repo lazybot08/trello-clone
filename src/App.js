@@ -59,17 +59,22 @@ const App = () => {
     setSelectedTask(task);
   };
 
-  const addStatus = () => {
+  const addStatusHandler = () => {
     const newStatus = prompt("Enter a new status:");
     if (newStatus) {
       setStatuses([...statuses, newStatus]);
     }
   };
 
+  const deleteStatusHandler = (selectedStatus) => {
+    const newStatus = statuses.filter(status => status!==selectedStatus)
+    setStatuses(newStatus);
+  };
+
   return (
     <div className="App">
       <h1>To-Do List</h1>
-      {!selectedTask && <button onClick={addStatus}>Add New Status</button>}
+      {!selectedTask && <button onClick={addStatusHandler}>Add New Status</button>}
       {!selectedTask && <div className="status-columns">
         {statuses.map((status) => (
           <StatusColumn
@@ -79,6 +84,7 @@ const App = () => {
             onTaskMove={onTaskMove}
             addTask={addTask}
             onTaskClick={handleTaskClick}
+            deleteStatus={deleteStatusHandler}
           />
         ))}
       </div>}

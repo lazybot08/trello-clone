@@ -60,10 +60,13 @@ const StatusColumn = (props) => {
           </span>
           {isMenu && (
             <select
-              size="9"
+              size="11"
               value={selectedValue}
               onChange={handleOptionChange}
             >
+              <option className="empty-option" value={null}></option>
+              <option value="" onClick={() => props.deleteStatus(props.title)}>Delete Status</option>
+              <hr className="break-line"/>
               <option value="rgb(227, 226, 224)">Gray</option>
               <option value="rgb(238, 224, 218)">Brown</option>
               <option value="rgb(250, 222, 201)">Orange</option>

@@ -43,9 +43,19 @@
 }
 
 .dropdown-menu select {
-  padding: 3px;
+  padding: 2px;
   position: absolute;
   overflow-y: auto;
+}
+
+.break-line {
+  border: 1px solid rgba(55, 53, 47, 0.5);
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.dropdown-menu select option {
+  margin-top: 0.85px;
 }
 
 .dropdown-menu select option:hover {
@@ -65,4 +75,8 @@
   border-radius: 3px;
   padding: 8px;
   min-height: 40px;
+}
+
+.empty-option {
+  display: none;
 }
